@@ -26,5 +26,13 @@
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 
+<label for="progress">進捗</label><br />
+<input type="radio" name="progress" value="A" checked="checked">A
+<input type="radio" name="progress" value="B">B
+<input type="radio" name="progress" value="C">C
+<br /><br />
+
+
+
 <input type="hidden" name="_token" value="${_token}" />
 <button type="submit">投稿</button>

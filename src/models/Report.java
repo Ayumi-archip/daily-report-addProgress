@@ -55,6 +55,9 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @Column(name = "progress", nullable = false)
+    private String progress;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -116,4 +119,14 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+    public String getProgress() {
+        return progress;
+    }
+
+    public void setProgress(String progress) {
+        this.progress = progress;
+    }
+
+
 }
