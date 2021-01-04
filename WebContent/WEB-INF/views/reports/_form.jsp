@@ -27,11 +27,10 @@
 <br /><br />
 
 <label for="progress">進捗</label><br />
-<input type="radio" name="progress" value="A" checked="checked">A
-<input type="radio" name="progress" value="B">B
-<input type="radio" name="progress" value="C">C
+<input type="radio" name="progress" value="A" <c:if test="${report.progress == 'A'}">checked</c:if>>A
+<input type="radio" name="progress" value="B" <c:if test="${report.progress == 'B'}">checked</c:if>>B
+<input type="radio" name="progress" value="C" <c:if test="${report.progress == 'C'}">checked</c:if>>C
 <br /><br />
-
 
 
 <input type="hidden" name="_token" value="${_token}" />
